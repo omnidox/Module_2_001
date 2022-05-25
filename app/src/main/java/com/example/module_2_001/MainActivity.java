@@ -14,9 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        myTextView=(TextView)findViewById(R.id.textView2);
+        myTextView= findViewById(R.id.textView2);
     }
 
     public void doSomething(View view) {
+        myTextView.setText("Add New Text");
     }
 }
