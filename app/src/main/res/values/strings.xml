@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Module_2_001</string>
     <string name="msg_app">Mobile Computing</string>
+    <string name="sub">Sub</string>
+    <string name="add">Add</string>
+    <string name="funny_possum">Funny Possum</string>
 </resources>
