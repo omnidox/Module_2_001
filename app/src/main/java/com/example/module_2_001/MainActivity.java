@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,5 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void doSomething(View view) {
         myTextView.setText("Add New Text");
+        Toast.makeText(this, "Toast msg to user", Toast.LENGTH_SHORT).show();
+
     }
 }
