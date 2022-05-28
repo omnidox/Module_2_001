@@ -22,7 +22,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void doSomething(View view) {
         myTextView.setText("Add New Text");
-        Toast.makeText(this, "Toast msg to user", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Toast msg to user", Toast.LENGTH_SHORT).show();
+
+        Snackbar.make(view,"snackbar Message", Snackbar.LENGTH_SHORT).
+                setAction("Ok", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this, "Toast msg to user", Toast.LENGTH_SHORT).show();
+                    }
+                }).show();
 
     }
 }
